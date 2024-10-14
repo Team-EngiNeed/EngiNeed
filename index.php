@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+ <!--NAVBAR-->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <div class="navbar__logo">
+        <img src="Engineed Logo.png" alt="pic" id="navbar__logo" />
+      </div>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="index.php" class="navbar__links">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="about.php" class="navbar__links">About</a>
+        </li>
+        <li class="navbar__item">
+          <a href="researchers.php" class="navbar__links">The Researchers</a>
+        </li>
+        <li class="navbar__btn">
+          <a href="#loginPopup" class="button" onclick="openLoginPopup(); return false;">Log In</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--MAIN-->
+  <div class="main">
+    <div class="main__container">
+      <div class="main__content">
+        <h1>EngiNeed</h1>
+        <p>Better and Safer Learning Space</p>
+        <button class="main__btn">
+          <a href="#services">Get Started</a>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!--SERVICES-->
+  <div class="services" id="services">
+    <h1>See What We Offer</h1>
+    <div class="services__container">
+      <div class="services__card">
+        <h2>Service</h2>
+        <p>Send a Ticket</p>
+        <button><a href="/">Get Started</a></button>
+      </div>
+      <div class="services__card">
+        <h2>About</h2>
+        <p>The Research Team</p>
+        <button><a href="about.php">Get Started</a></button>
+      </div>
+    </div>
+  </div>
+
+  <!--LOGIN POPUP-->
+  <div class="popup" id="loginPopup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closeLoginPopup()">&times;</span>
+      <h2>Log In</h2>
+      <div class="form-element">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter Email">
+      </div>
+      <div class="form-element">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter Password">
+      </div>
+      <div class="form-element">
+        <input type="checkbox" id="remember-me">
+        <label for="remember-me">Remember me</label>
+      </div>
+      <button class="login-btn">Log In</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
